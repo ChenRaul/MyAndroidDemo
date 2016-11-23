@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- frame动画中的xml格式：<animation-list>元素是必须的，并且必须要作为根元素，可以包含一或多个<item>元素；
+	android:onshot如果定义为true的话，此动画只会执行一次，如果为false则一直循环。
+	<item>元素代表一帧动画，android:drawable指定此帧动画所对应的图片资源，
+	android:druation代表此帧持续的时间，整数，单位为毫秒。 -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+    <item  android:drawable="@drawable/basketball"  
+        android:duration="100"
+         />
+    <item  android:drawable="@drawable/earth"  
+        android:duration="100"
+         />
+    <item  android:drawable="@drawable/stars"  
+        android:duration="100"
+         />
+    <item  android:drawable="@drawable/sing_icon"  
+        android:duration="100"
+         />
+
+</animation-list>

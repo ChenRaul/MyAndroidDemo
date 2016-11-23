@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context=".ProgressButtonDemoActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.89"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <View
+        	android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+    <TextView 
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        android:text="如果需要在地图上进行定位，请点击下面的按钮"
+        />
+    <View
+        	android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+    <Button 
+        	android:id="@+id/button"
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:layout_gravity="center"
+            android:text="Click to map location"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+    <TextView 
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="提示信息："
+        android:layout_gravity="center"
+        android:gravity="center|left"
+        />
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="2dp"
+            android:background="#000000" />
+</LinearLayout>

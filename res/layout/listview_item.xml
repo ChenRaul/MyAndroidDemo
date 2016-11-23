@@ -1,0 +1,25 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="fill_parent" 
+	android:layout_width="wrap_content"
+	> 
+	<Button
+	    android:layout_alignParentRight="true" 
+	    android:layout_width="wrap_content"
+ 		android:layout_height="fill_parent" 
+ 		android:id="@+id/ItemButton"
+ 		android:text="Click"
+ 		android:focusable="false"/> 
+	<TextView
+	    android:id="@+id/ItemTitle" 
+	    android:layout_height="fill_parent" 
+		android:layout_width="wrap_content" 
+		android:textSize="20sp"/>
+	<!-- 改变下面 layout_toRightOf为 below 可以将文字文本内容放在标题的下面，不过要注意大小范围-->
+ 	<TextView
+ 	    android:id="@+id/ItemText"
+ 	     android:layout_height="fill_parent" 
+		android:layout_width="wrap_content" 
+		android:textSize="20sp"
+		android:layout_toRightOf="@+id/ItemTitle"/> 
+</RelativeLayout>

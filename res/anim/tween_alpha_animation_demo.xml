@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha
+    android:fromAlpha="0"
+    android:toAlpha="1"
+    android:duration="1000"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+    
+<!--   注释：<alpha>是渐变动画，可以实现fadeIn和fadeOut的效果，与之对应的Java对象是AlphaAnimation。
+	    android:fromAlpha属性代表起始alpha值，浮点值，范围在0.0和1.0之间，分别代表透明和完全不透明，
+	    android:toAlpha属性代表结尾alpha值，浮点值，范围也在0.0和1.0之间。
+	    <alpha
+	        android:fromAlpha="float"
+	        android:toAlpha="float" /> -->
+

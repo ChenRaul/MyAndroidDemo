@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customview="http://schemas.android.com/apk/res/com.example.myandroiddemo"
+   xmlns:customcirlceview="http://schemas.android.com/apk/res/com.example.myandroiddemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customview_ll1"
+         android:layout_centerHorizontal ="true">
+        <com.example.myandroiddemo.CustomView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        customview:customText = "132165489761"
+        customview:customTextColor="#ff0000"  
+        customview:customTextSize="30sp"
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customview_ll2"
+        android:layout_below="@id/customview_ll1"
+        android:layout_centerHorizontal ="true">
+        <com.example.myandroiddemo.CustomCircleView
+	    android:layout_width="200dp"
+        android:layout_height="200dp"
+        customcirlceview:speed="50"
+        customcirlceview:circleWidth="20dp"
+        customcirlceview:secondColor="#ffffffff"
+         />
+    </LinearLayout>
+	
+</RelativeLayout>

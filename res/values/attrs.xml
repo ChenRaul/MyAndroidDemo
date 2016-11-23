@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GifMoviewView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <!-- 感觉 CustomTheme并没有什么作用 可以去掉-->
+    <declare-styleable name="CustomTheme">
+        <attr name="gifMoviewViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gifPath" format="string" />
+        <attr name="gifResource" format="reference" />
+    </declare-styleable>
+     
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" format="dimension" />
+        
+    </declare-styleable>
+    
+    <declare-styleable name="CustomView">
+        <attr name="customText" format="string"/>
+        <attr name="customTextColor" format="color"/>
+         <attr name="customTextSize" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CustomCircleView">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="speed" format="integer"></attr>
+        <!-- 圆环的宽度 -->
+        <attr name="circleWidth" format="dimension"></attr>
+        
+    </declare-styleable>
+</resources>

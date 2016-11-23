@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+    <!-- verticalSpacing  grid元素之间的竖直间隔 -->
+    <!--horizontalSpacing  grid元素之间的水平间隔  -->
+    <!--numColumns  表示有多少列，如果设置为auto_fit，将根据columnWidth和Spacing来自动计算 -->
+    <!-- columnWidth  一般建议采用有像素密度无关的dip或者dp来表示-->
+    <!--stretchMode  如何填满空余的位置，模拟器采用WVGA800*480，每排4列，有4＊100＋5＊3＝415，还余65px的空间，
+    如果是 columnWidth，则这剩余的65将分摊给4列，每列增加16/17px。如果采用SpacingWidth，则分摊给3个间隔空隙 -->
+    <GridView 
+        android:id="@+id/gridview"    
+   	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"    
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"/>
+
+</LinearLayout>

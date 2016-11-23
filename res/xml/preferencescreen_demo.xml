@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="设置">
+    <!-- android:key 这个属性相当于android:id的作用。用此key来唯一表示此Preferenc -->
+    <PreferenceScreen android:title="PreferenceScreen"
+        android:key="preferenceScreen">
+        <SwitchPreference 
+            android:title="SwitchPreference"
+            android:key="ps_switchPreference"
+            android:summary="switch"/>
+        <EditTextPreference 
+            android:title="EditTextPreference"
+            android:key="ps_editTextPreference"
+            android:summary="设置对话框中的编辑框中的内容"
+            android:dialogTitle="对话框标题"
+            />
+        <CheckBoxPreference 
+            android:title="CheckBoxPreference"
+            android:key="ps_checkBoxPreference"
+            android:summaryOn="选中目标"
+            android:summaryOff="放弃目标"/>
+       
+   	<!--  <ListPreference  不能和MultiSelectListPreference同时存在，且后者不能使用android:defaultValue
+            android:title="ListPreference"
+            android:key="ps_listPreference"
+            android:summary="列表框,在这里可以显示设置好的entries文本"
+            android:dialogTitle="弹出的对话框的标题设置"
+            android:entries="@array/entry_list"
+            android:entryValues="@array/entryValues_list"
+            android:defaultValue="对应entry_list的文本内容2的key-value键值对，value保存至sharedPreference文件"/> -->
+           <MultiSelectListPreference
+   		     android:title="MultiSelectListPreference"
+            android:key="ps_multiSelectListPreference"
+            android:summary="列表框,在这里可以显示设置好的entries文本"
+            android:dialogTitle="弹出的对话框的标题设置"
+            android:entries="@array/entry_list"
+            android:entryValues="@array/entryValues_list"
+            
+   		    />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="PreferenceCategory"
+        android:key="preferenceCategory">
+        <SwitchPreference 
+             android:title="SwitchPreference"
+            android:key="pc_switchPreference"
+            android:summary="switch"/>
+        <EditTextPreference 
+            android:title="EditTextPreference"
+            android:key="pc_editTextPreference"
+            android:summary="设置对话框中的编辑框中的内容"
+            android:dialogTitle="对话框标题"
+            android:dialogMessage="设置相关的提示信息"
+            android:positiveButtonText="修改"
+            />
+         <CheckBoxPreference 
+            android:title="CheckBoxPreference"
+            android:key="pc_checkBoxPreference"
+            android:summary="请选择"
+            android:defaultValue="false"/>
+          <ListPreference
+            android:title="ListPreference"
+            android:key="pc_listPreference"
+            android:dialogTitle="音量选择"
+            android:entries="@array/entry_list_demo"
+            android:entryValues="@array/entryValues_list_demo"
+            android:defaultValue="0.5"/>
+    </PreferenceCategory>
+	<Preference android:title="Preference"
+	    android:key="preference" android:icon="@drawable/test3"
+	    android:summary="文本框，可以添加一个点击事件，或者在onPreferenceTreeClick()方法中设置">
+	</Preference>
+</PreferenceScreen>

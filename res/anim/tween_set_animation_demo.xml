@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 完整的定义Tween 多组Animation XML文件方式如下:
+	<?xml version="1.0" encoding="utf-8"?>
+	注释：XML文件中必须有一个根元素，可以是<alpha>、<scale>、<translate>、<rotate>中的任意一个，
+		也可以是<set>来管理一个由前面几个元素组成的动画集合。
+	注释：<set>是一个动画容器，管理多个动画的群组，与之相对应的Java对象是AnimationSet。它有两个属性，
+		android:interpolator代表一个插值器资源，可以引用系统自带插值器资源，也可以用自定义插值器资源，
+		默认值是匀速插值器；android:shareInterpolator代表<set>里面的多个动画是否要共享插值器，
+		默认值为true，即共享插值器，如果设置为false，那么<set>的插值器就不再起作用，我们要在每个动画中加入插值器。
+	<set xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:interpolator="@[package:]anim/interpolator_resource"
+	    android:shareInterpolator=["true" | "false"] >
+	    注释：<alpha>是渐变动画，可以实现fadeIn和fadeOut的效果，与之对应的Java对象是AlphaAnimation。
+	    android:fromAlpha属性代表起始alpha值，浮点值，范围在0.0和1.0之间，分别代表透明和完全不透明，
+	    android:toAlpha属性代表结尾alpha值，浮点值，范围也在0.0和1.0之间。
+	    <alpha
+	        android:fromAlpha="float"
+	        android:toAlpha="float" />
+	  注释：<scale>是缩放动画，可以实现动态调控件尺寸的效果，与之对应的Java对象是ScaleAnimation。
+		  android:fromXScale属性代表起始的X方向上相对自身的缩放比例，浮点值，比如1.0代表自身无变化，
+		  0.5代表起始时缩小一倍，2.0代表放大一倍；android:toXScale属性代表结尾的X方向上相对自身的缩放比例，
+		  浮点值；android:fromYScale属性代表起始的Y方向上相对自身的缩放比例，浮点值；android:toYScale属性
+		  代表结尾的Y方向上相对自身的缩放比例，浮点值；android:pivotX属性代表缩放的中轴点X坐标，浮点值，
+		  android:pivotY属性代表缩放的中轴点Y坐标，浮点值，对于这两个属性，如果我们想表示中轴点为图像的中心，
+		  我们可以把两个属性值定义成0.5或者50%。
+	    <scale
+	        android:fromXScale="float"
+	        android:toXScale="float"
+	        android:fromYScale="float"
+	        android:toYScale="float"
+	        android:pivotX="float"
+	        android:pivotY="float" />
+	 注释：<translate>是位移动画，代表一个水平、垂直的位移。与之对应的Java对象是TranslateAnimation。
+		 android:fromXDelta属性代表起始X方向的位置，android:toXDelta代表结尾X方向上的位置，android:fromYDelta
+		 属性代表起始Y方向上的位置，android:toYDelta属性代表结尾Y方向上的位置，以上四个属性都支持三种表示方式：
+		 浮点数、num%、num%p；如果以浮点数字表示，代表相对自身原始位置的像素值；如果以num%表示，代表相对于自己的百分比，
+		 比如toXDelta定义为100%就表示在X方向上移动自己的1倍距离；如果以num%p表示，代表相对于父类组件的百分比
+	    <translate
+	        android:fromXDelta="float"
+	        android:toXDelta="float"
+	        android:fromYDelta="float"
+	        android:toYDelta="float" />
+	注释：<rotate>是旋转动画，与之对应的Java对象是RotateAnimation。android:fromDegrees属性代表起始角度，浮点值，
+		单位：度；android:toDegrees属性代表结尾角度，浮点值，单位：度；android:pivotX属性代表旋转中心的X坐标值，
+		android:pivotY属性代表旋转中心的Y坐标值，这两个属性也有三种表示方式，数字方式代表相对于自身左边缘的像素值，
+		num%方式代表相对于自身左边缘或顶边缘的百分比，num%p方式代表相对于父容器的左边缘或顶边缘的百分比。
+	    <rotate
+	        android:fromDegrees="float"
+	        android:toDegrees="float"
+	        android:pivotX="float"
+	        android:pivotY="float" />
+	    <set>
+	        ...
+	    </set>
+	</set>
+	注释：android:fillAfter="true"表示这个动画执行完之后保持最后的状态
+ -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="1000"
+        />
+	<scale android:fromXScale="1"
+	    android:toXScale="2"
+	    android:fromYScale="1"
+	    android:toYScale="2"
+	    android:pivotX="50%"
+	    android:pivotY="50%"
+	    android:duration="1000"/>
+</set>

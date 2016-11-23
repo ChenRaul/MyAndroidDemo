@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+	android:id="@+id/number_ll"
+    android:orientation="vertical" >
+
+    <TextView
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="手机号码" />
+
+    <EditText
+
+        android:id="@+id/mobile"
+
+        android:layout_width="fill_parent"
+		android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:hint="请输入完整的电话号码"
+
+        />
+
+    <Button
+
+        android:id="@+id/button"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="查询" />
+
+    <TextView
+
+        android:id="@+id/result"
+
+        android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+       />
+
+</LinearLayout>

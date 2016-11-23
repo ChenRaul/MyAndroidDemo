@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/anticipate_overshoot_interpolator"
+    > 
+    <!-- 注释：<rotate>是旋转动画，与之对应的Java对象是RotateAnimation。android:fromDegrees属性代表起始角度，浮点值，
+		单位：度；android:toDegrees属性代表结尾角度，浮点值，单位：度；android:pivotX属性代表旋转中心的X坐标值，
+		android:pivotY属性代表旋转中心的Y坐标值，这两个属性也有三种表示方式，数字方式代表相对于自身左边缘的像素值，
+		num%方式代表相对于自身左边缘或顶边缘的百分比，num%p方式代表相对于父容器的左边缘或顶边缘的百分比。
+	    <rotate
+	        android:fromDegrees="float"
+	        android:toDegrees="float"
+	        android:pivotX="float"
+	        android:pivotY="float" /> -->
+	<rotate android:fromDegrees="0"
+	    android:toDegrees="360"
+	    android:pivotX="50%"
+	    android:pivotY="50%"
+	    android:duration="3000"/>
+</set>

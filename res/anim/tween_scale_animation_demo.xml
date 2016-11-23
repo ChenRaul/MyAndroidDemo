@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale android:fromXScale="1"
+    	android:toXScale="2"
+    	android:fromYScale="1"
+    	android:toYScale="2"
+    	android:pivotX="50%"
+    	android:pivotY="50%"
+    	android:interpolator="@android:anim/decelerate_interpolator"
+    	android:duration="1000"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <!-- 注释：<scale>是缩放动画，可以实现动态调控件尺寸的效果，与之对应的Java对象是ScaleAnimation。
+		  android:fromXScale属性代表起始的X方向上相对自身的缩放比例，浮点值，比如1.0代表自身无变化，
+		  0.5代表起始时缩小一倍，2.0代表放大一倍；android:toXScale属性代表结尾的X方向上相对自身的缩放比例，
+		  浮点值；android:fromYScale属性代表起始的Y方向上相对自身的缩放比例，浮点值；android:toYScale属性
+		  代表结尾的Y方向上相对自身的缩放比例，浮点值；android:pivotX属性代表缩放的中轴点X坐标，浮点值，
+		  android:pivotY属性代表缩放的中轴点Y坐标，浮点值，对于这两个属性，如果我们想表示中轴点为图像的中心，
+		  我们可以把两个属性值定义成0.5或者50%。
+	    <scale
+	        android:fromXScale="float"
+	        android:toXScale="float"
+	        android:fromYScale="float"
+	        android:toYScale="float"
+	        android:pivotX="float"
+	        android:pivotY="float" /> -->
+

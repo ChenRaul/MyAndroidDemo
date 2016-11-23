@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate
+    android:fromXDelta="0"
+    android:toXDelta="100"
+    android:fromYDelta="0"
+    android:toYDelta="100"
+    android:duration="1000" xmlns:android="http://schemas.android.com/apk/res/android"/>
+   
+<!--  注释：<translate>是位移动画，代表一个水平、垂直的位移。与之对应的Java对象是TranslateAnimation。
+		 android:fromXDelta属性代表起始X方向的位置，android:toXDelta代表结尾X方向上的位置，android:fromYDelta
+		 属性代表起始Y方向上的位置，android:toYDelta属性代表结尾Y方向上的位置，以上四个属性都支持三种表示方式：
+		 浮点数、num%、num%p；如果以浮点数字表示，代表相对自身原始位置的像素值；如果以num%表示，代表相对于自己的百分比，
+		 比如toXDelta定义为100%就表示在X方向上移动自己的1倍距离；如果以num%p表示，代表相对于父类组件的百分比
+	    <translate
+	        android:fromXDelta="float"
+	        android:toXDelta="float"
+	        android:fromYDelta="float"
+	        android:toYDelta="float" /> -->
